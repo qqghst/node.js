@@ -68,7 +68,7 @@ fs.unlink("./new-folder/index.js", (error) => {
     if (error) throw error;
     // console.log("File deleted");
 
-    // удаляю сначала папку, а потом файл
+    // удаляю папку
     fs.rmdir("./new-folder", (error) => {
         if (error) throw error;
     })
